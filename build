@@ -1,23 +1,23 @@
 #!/bin/bash
 
 cd mockup
-qmake pisak-eyetracker-mockup.pro
+qmake eyetracker-mockup.pro
 make -j4
 cd ..
 
 cd camera
-qmake pisak-eyetracker-hpe.pro
+qmake eyetracker-hpe.pro
 make -j4
 cd ..
 
 cd ml
-qmake pisak-eyetracker-ml.pro
+qmake eyetracker-ml.pro
 make -j4
 cd ..
 
 if [ -f tobii/sdk/include/tobiigaze.h ]; then
     cd tobii
-    qmake pisak-eyetracker-tobii.pro
+    qmake eyetracker-tobii.pro
     make -j4
     cd ..
 else
@@ -26,11 +26,11 @@ fi
 
 mkdir -p bin
 
-cp mockup/pisak-eyetracker-mockup bin/pisak-eyetracker-mockup
-cp camera/pisak-eyetracker-hpe bin/pisak-eyetracker-hpe
-cp ml/pisak-eyetracker-ml bin/pisak-eyetracker-ml
+cp mockup/eyetracker-mockup bin/eyetracker-mockup
+cp camera/eyetracker-hpe bin/eyetracker-hpe
+cp ml/eyetracker-ml bin/eyetracker-ml
 
-if [ -f tobii/pisak-eyetracker-tobii ]; then
-    cp tobii/pisak-eyetracker-tobii bin/pisak-eyetracker-tobii
+if [ -f tobii/eyetracker-tobii ]; then
+    cp tobii/eyetracker-tobii bin/eyetracker-tobii
 fi
 
