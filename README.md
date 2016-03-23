@@ -10,7 +10,7 @@ License
 
 This program is licensed under the terms of the GNU GPL version 3.
 
-Copyright (c) 2014 Alex Khrabrov <alex@mroja.net>
+Copyright (c) 2015-2016 Alex Khrabrov <alex@mroja.net>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
