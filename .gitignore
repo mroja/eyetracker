@@ -1,0 +1,12 @@
+*.o
+moc_*.h
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+Makefile
+*~
+ml/pisak-eyetracker-ml
+camera/pisak-eyetracker-hpe
+tobii/pisak-eyetracker-tobii
+mockup/pisak-eyetracker-mockup
+bin/

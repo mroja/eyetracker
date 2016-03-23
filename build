@@ -15,15 +15,22 @@ qmake pisak-eyetracker-ml.pro
 make -j4
 cd ..
 
-cd tobii
-qmake pisak-eyetracker-tobii.pro
-make -j4
-cd ..
+if [ -f tobii/sdk/include/tobiigaze.h ]; then
+    cd tobii
+    qmake pisak-eyetracker-tobii.pro
+    make -j4
+    cd ..
+else
+    echo No Tobii Gaze SDK detected.
+fi
 
 mkdir -p bin
 
 cp mockup/pisak-eyetracker-mockup bin/pisak-eyetracker-mockup
 cp camera/pisak-eyetracker-hpe bin/pisak-eyetracker-hpe
 cp ml/pisak-eyetracker-ml bin/pisak-eyetracker-ml
-cp tobii/pisak-eyetracker-tobii bin/pisak-eyetracker-tobii
+
+if [ -f tobii/pisak-eyetracker-tobii ]; then
+    cp tobii/pisak-eyetracker-tobii bin/pisak-eyetracker-tobii
+fi
 
