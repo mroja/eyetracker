@@ -1,6 +1,6 @@
 TEMPLATE = app
 
-TARGET = pisak-eyetracker-ml
+TARGET = eyetracker-ml
 
 QT += widgets opengl websockets
 

@@ -1,6 +1,6 @@
 TEMPLATE = app
 
-TARGET = pisak-eyetracker-tobii
+TARGET = eyetracker-tobii
 
 QT += qml quick widgets websockets
 CONFIG += c++11

@@ -5,8 +5,8 @@ ui_*.h
 qrc_*.cpp
 Makefile
 *~
-ml/pisak-eyetracker-ml
-camera/pisak-eyetracker-hpe
-tobii/pisak-eyetracker-tobii
-mockup/pisak-eyetracker-mockup
+ml/eyetracker-ml
+camera/eyetracker-hpe
+tobii/eyetracker-tobii
+mockup/eyetracker-mockup
 bin/

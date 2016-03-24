@@ -1,6 +1,6 @@
 TEMPLATE = app
 
-TARGET = pisak-eyetracker-hpe
+TARGET = eyetracker-hpe
 
 QT += widgets qml quick websockets
 

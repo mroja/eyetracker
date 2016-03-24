@@ -1,6 +1,6 @@
 TEMPLATE = app
 
-TARGET = pisak-eyetracker-mockup
+TARGET = eyetracker-mockup
 
 QT += qml quick widgets websockets
 CONFIG += c++11
