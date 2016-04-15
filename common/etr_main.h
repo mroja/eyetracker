@@ -123,7 +123,7 @@ int etr_main(int argc, char * argv[])
                     { "x", pt.x() },
                     { "y", pt.y() },
                     { "timestamp", timestamp },
-                    { "eye_detected", eyeDetected }
+                    { "eye_detected", eyeDetected ? 1.0 : 0.0 }
                 });
 
                 // qDebug() << QString(jsonDoc.toJson(QJsonDocument::Compact));
