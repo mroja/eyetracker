@@ -164,7 +164,7 @@ def train_predictors(calibration_data):
     output_data = []
     with multiprocessing.Pool() as pool:
         for i, data in enumerate(pool.imap_unordered(train_predictor_worker, configs), 1):
-            print('done {0:.2f}%'.format(100 * (i / num_tasks)))
+            print('done {:.2%}'.format(i / num_tasks))
             output_data.append(data)
         pool.close()
 
@@ -249,7 +249,7 @@ def evaluate_predictors(serialized_predictors, test_data):
     output_data = []
     with multiprocessing.Pool() as pool:
         for i, data in enumerate(pool.imap_unordered(evaluate_predictor_worker, configs), 1):
-            print('done {0:.2f}%'.format(100 * (i / num_tasks)))
+            print('done {:.2%}'.format(i / num_tasks))
             output_data.append(data)
         pool.close()
 
